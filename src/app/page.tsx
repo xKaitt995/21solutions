@@ -7,11 +7,11 @@ import ContactFooter from "@/components/ContactFooter";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-text-primary selection:bg-accent-cyber selection:text-black">
+    <main className="min-h-screen bg-background text-text-primary selection:bg-accent-cyber selection:text-white">
       <Navbar />
       <HeroSection />
-      <ValueProposition />
       <StrategicMethodology />
+      <ValueProposition />
       <FoundersTeam />
       <ContactFooter />
     </main>

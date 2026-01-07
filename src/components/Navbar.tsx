@@ -18,7 +18,7 @@ export default function Navbar() {
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300",
                 isScrolled
-                    ? "bg-background/80 backdrop-blur-md border-b border-surface-highlight"
+                    ? "bg-background/80 backdrop-blur-md border-b border-surface-highlight shadow-sm"
                     : "bg-transparent"
             )}
             initial={{ y: -100 }}
@@ -36,7 +36,7 @@ export default function Navbar() {
 
             <div className="hidden md:flex items-center space-x-8">
                 {/* Updated Links to match new sections */}
-                {["La Sinergia", "Metodologia", "El Equipo"].map((item) => (
+                {["Como pensamos", "Que hacemos", "Quien somos", "Contactenos"].map((item) => (
                     <Link
                         key={item}
                         href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center">
-                <button className="hidden md:block px-5 py-2 text-sm font-semibold text-background bg-text-primary rounded-full hover:bg-gray-200 transition-colors font-sans">
+                <button className="hidden md:block px-5 py-2 text-sm font-semibold text-white bg-text-primary rounded-full hover:bg-gray-800 transition-colors font-sans">
                     Ser Socio Fundador
                 </button>
             </div>

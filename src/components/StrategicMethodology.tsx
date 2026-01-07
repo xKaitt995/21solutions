@@ -37,7 +37,7 @@ const steps = [
 
 export default function StrategicMethodology() {
     return (
-        <section className="py-24 bg-background relative" id="metodologia">
+        <section className="py-24 bg-surface relative" id="como-pensamos">
             <div className="max-w-7xl mx-auto px-6">
                 <motion.div
                     className="mb-20 text-center max-w-3xl mx-auto"
@@ -46,9 +46,9 @@ export default function StrategicMethodology() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 font-display">El Método 21</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 font-display">Cómo Pensamos</h2>
                     <p className="text-xl text-text-secondary font-sans">
-                        Más que consultores, somos tu socio estratégico. Nuestro proceso está diseñado para transformar la complejidad técnica en ventaja competitiva tangible.
+                        El Método 21: Transformamos complejidad en ventaja competitiva.
                     </p>
                 </motion.div>
 
@@ -59,14 +59,14 @@ export default function StrategicMethodology() {
                     {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
-                            className="group relative bg-surface border border-surface-highlight p-6 rounded-2xl hover:border-gray-600 transition-colors"
+                            className="group relative bg-background border border-surface-highlight p-6 rounded-2xl hover:border-gray-400 transition-colors shadow-sm"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <div className={cn(
-                                "w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-background border",
+                                "w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-surface border",
                                 step.border,
                                 step.color
                             )}>

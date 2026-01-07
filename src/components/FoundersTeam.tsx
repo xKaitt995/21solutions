@@ -29,17 +29,28 @@ const founders = [
         name: "Edward Herrera Galamba",
         role: "Socio Fundador | Transición Cloud Segura & Automatización",
         icon: Cloud,
-        color: "text-accent-ai", // #8B5CF6 - Using AI/Purple accent as requested for "Convergence"
+        color: "text-accent-ai", // #8B5CF6
         borderColor: "border-accent-ai",
         hoverBg: "hover:bg-accent-ai/5",
         bio: "La inteligencia ofensiva convertida en defensa cloud blindada. Con disciplina operativa militar, Edward es el puente hacia la nube. Combina capacidades de Red Teaming (eJPTv2) con administración de sistemas para liderar una Transición a Cloud segura por diseño, utilizando la automatización para endurecer infraestructuras críticas.",
         expertise: ["Cloud Security", "Purple Teaming", "Automatización", "Entornos Acreditables"],
     },
-];
+    {
+        name: "Tu Nombre Aquí", // Placeholder for user context if needed, but keeping 3 for now as requested.
+        role: "Socio Estratégico | Visionario",
+        icon: Cloud,
+        color: "text-brand-core",
+        borderColor: "border-brand-core",
+        hoverBg: "hover:bg-brand-core/5",
+        bio: "...",
+        expertise: [],
+        hidden: true
+    }
+].filter(f => !f.hidden);
 
 export default function FoundersTeam() {
     return (
-        <section className="py-24 bg-surface/30 relative overflow-hidden" id="el-equipo">
+        <section className="py-24 bg-surface relative overflow-hidden" id="quien-somos">
             <div className="max-w-7xl mx-auto px-6">
                 <motion.div
                     className="mb-16 text-center"
@@ -48,7 +59,7 @@ export default function FoundersTeam() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-text-primary font-display">Los Arquitectos del Futuro</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-text-primary font-display">Quién Somos</h2>
                     <p className="mt-4 text-xl text-text-secondary font-sans">
                         Experiencia Senior. Enfoque boutique. Contacto directo.
                     </p>
@@ -60,10 +71,10 @@ export default function FoundersTeam() {
                         <motion.div
                             key={founder.name}
                             className={cn(
-                                "group relative p-8 bg-surface border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col h-full",
+                                "group relative p-8 bg-background border border-surface-highlight rounded-2xl overflow-hidden transition-all duration-300 flex flex-col h-full shadow-sm hover:shadow-xl",
                                 founder.borderColor,
                                 founder.hoverBg,
-                                "hover:border-opacity-100 hover:shadow-lg hover:shadow-black/50 border-opacity-40" // Default subtle border
+                                "hover:border-opacity-100 border-opacity-60"
                             )}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +86,7 @@ export default function FoundersTeam() {
 
                             {/* Header: Icon & Name */}
                             <div className="flex items-start gap-4 mb-6">
-                                <div className={cn("p-3 rounded-lg bg-background/50 backdrop-blur-sm border border-opacity-20", founder.borderColor)}>
+                                <div className={cn("p-3 rounded-lg bg-surface border border-opacity-20", founder.borderColor)}>
                                     <founder.icon className={cn("w-8 h-8", founder.color)} strokeWidth={1.5} />
                                 </div>
                                 <div>
@@ -108,7 +119,7 @@ export default function FoundersTeam() {
                                         <span
                                             key={skill}
                                             className={cn(
-                                                "px-3 py-1 text-xs font-medium rounded-full border border-opacity-20 bg-background/50 backdrop-blur-md",
+                                                "px-3 py-1 text-xs font-medium rounded-full border border-opacity-20 bg-surface",
                                                 founder.borderColor,
                                                 founder.color
                                             )}
@@ -121,8 +132,8 @@ export default function FoundersTeam() {
 
                             {/* Contact / LinkedIn CTA */}
                             <div className="mt-8 pt-6 border-t border-surface-highlight flex justify-between items-center opacity-60 group-hover:opacity-100 transition-opacity">
-                                <span className="text-xs text-text-secondary font-sans">Contactar</span>
-                                <Linkedin className="w-4 h-4 text-text-primary cursor-pointer hover:text-white transition-colors" />
+                                <span className="text-xs text-text-secondary font-sans font-bold">Contactar en LinkedIn</span>
+                                <Linkedin className="w-5 h-5 text-brand-core cursor-pointer hover:scale-110 transition-transform" />
                             </div>
 
                         </motion.div>

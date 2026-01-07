@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 bg-background">
             {/* Abstract Background Animation */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-cyber/20 rounded-full blur-3xl mix-blend-screen animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-ai/20 rounded-full blur-3xl mix-blend-screen animate-pulse delay-700" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-infra/10 rounded-full blur-3xl mix-blend-screen animate-pulse delay-1000" />
-                <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-cyber/10 rounded-full blur-3xl mix-blend-multiply animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-ai/10 rounded-full blur-3xl mix-blend-multiply animate-pulse delay-700" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-infra/5 rounded-full blur-3xl mix-blend-multiply animate-pulse delay-1000" />
+                {/* Light Mode Grid: Gray dots on white */}
+                <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_at_center,black_70%,transparent_100%)]" />
             </div>
 
             <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
@@ -40,10 +41,10 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="flex flex-col items-center gap-4"
                 >
-                    <button className="px-8 py-4 text-lg font-bold text-background bg-gradient-to-r from-accent-cyber via-accent-ai to-accent-infra rounded-full hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.5)] font-sans">
+                    <button className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-accent-cyber via-accent-ai to-accent-infra rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-accent-ai/20 font-sans">
                         Inicia tu Transformación
                     </button>
-                    <p className="text-sm text-text-secondary/60 uppercase tracking-widest font-sans">
+                    <p className="text-sm text-text-secondary/80 uppercase tracking-widest font-sans">
                         Consultoría Estratégica • Implementación • Soporte
                     </p>
                 </motion.div>

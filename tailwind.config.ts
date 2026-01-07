@@ -9,20 +9,20 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                background: "#0A0A0A",
-                surface: "#121212",
-                "surface-highlight": "#171717",
+                background: "#FFFFFF",
+                surface: "#F3F4F6", // gray-100
+                "surface-highlight": "#E5E7EB", // gray-200
                 text: {
-                    primary: "#FFFFFF",
-                    secondary: "#9CA3AF",
+                    primary: "#111827", // gray-900
+                    secondary: "#4B5563", // gray-600
                 },
                 accent: {
-                    cyber: "#00E5FF", // Cyan
-                    ai: "#8B5CF6", // Violet
-                    infra: "#F97316", // Orange
+                    cyber: "#0891B2", // Cyan-600 (Darker for light mode visibility)
+                    ai: "#7C3AED", // Violet-600
+                    infra: "#EA580C", // Orange-600
                 },
                 brand: {
-                    core: "#FFFFFF", // Fallback or gradient start
+                    core: "#2563EB", // Royal Blue
                 },
             },
             fontFamily: {
