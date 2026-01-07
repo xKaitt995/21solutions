@@ -36,7 +36,7 @@ export default function Navbar() {
 
             <div className="hidden md:flex items-center space-x-8">
                 {/* Updated Links to match new sections */}
-                {["Como pensamos", "Que hacemos", "Quien somos", "Contactenos"].map((item) => (
+                {["Como pensamos", "Que hacemos", "Quien somos"].map((item) => (
                     <Link
                         key={item}
                         href={`#${item.toLowerCase().replace(" ", "-")}`}
