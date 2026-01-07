@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ValueProposition from "@/components/ValueProposition";
 import FoundersTeam from "@/components/FoundersTeam";
-import SponsorshipTiers from "@/components/SponsorshipTiers";
+import ServicePackages from "@/components/ServicePackages";
 import RoadmapWidget from "@/components/RoadmapWidget";
 import ContactFooter from "@/components/ContactFooter";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <ValueProposition />
       <FoundersTeam />
-      <SponsorshipTiers />
+      <ServicePackages />
       <RoadmapWidget />
       <ContactFooter />
     </main>

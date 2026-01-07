@@ -41,7 +41,7 @@ export default function ValueProposition() {
                     {/* Convergence Center - The "21" Factor */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group cursor-default">
                         <div className="relative flex items-center justify-center w-24 h-24 bg-white/10 rounded-full border border-white/20 hover:border-white/50 hover:bg-white/20 transition-all duration-500 hover:scale-110 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-                            <span className="text-3xl font-bold text-white">21</span>
+                            <span className="text-3xl font-bold text-white font-display">21</span>
                         </div>
                     </div>
                 </div>
@@ -49,31 +49,31 @@ export default function ValueProposition() {
                 {/* Text Column */}
                 <div className="space-y-8">
                     <motion.h2
-                        className="text-4xl md:text-5xl font-bold text-text-primary leading-tight"
+                        className="text-4xl md:text-5xl font-bold text-text-primary leading-tight font-display"
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        ¿Por qué 21 solutions? <br />
-                        <span className="text-text-secondary">¿Por qué ahora?</span>
+                        Tu evolución digital, <br />
+                        <span className="text-text-secondary">sin fricción.</span>
                     </motion.h2>
 
                     <motion.div
-                        className="space-y-6 text-lg text-text-secondary"
+                        className="space-y-6 text-lg text-text-secondary font-sans"
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <p>
-                            El mercado está saturado de especialistas que operan en silos. Los expertos en seguridad bloquean la innovación, los arquitectos de datos ignoran la infraestructura física, y los ingenieros de sistemas temen a la automatización.
+                            Las grandes consultoras ignoran a la mediana empresa, y los proveedores locales carecen de la profundidad técnica necesaria. Tu negocio merece ingeniería de nivel &quot;Big 4&quot; adaptada a tu escala.
                         </p>
                         <p className="text-text-primary border-l-4 border-brand-core pl-4">
-                            La integración nativa de seguridad, IA y &quot;hierro&quot; es la única vía para abordar los retos de complejidad exponencial del siglo XXI.
+                            Democratizamos el acceso a Ciberseguridad avanzada, IA operativa e Infraestructura resiliente.
                         </p>
                         <p>
-                            En 21 solutions, no &quot;colaboramos&quot; entre departamentos. <strong className="text-white">Somos una sola mente trinitaria</strong> diseñada para resolver problemas que ninguna consultora tradicional puede siquiera diagnosticar.
+                            En 21 solutions, nos convertimos en tu socio tecnológico estratégico. <strong className="text-white">Te ayudamos a navegar la transición tecnológica</strong> con soluciones que se pagan solas a través de eficiencia y crecimiento.
                         </p>
                     </motion.div>
                 </div>

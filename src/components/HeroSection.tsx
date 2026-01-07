@@ -15,23 +15,23 @@ export default function HeroSection() {
 
             <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
                 <motion.h1
-                    className="text-5xl md:text-7xl font-bold tracking-tight text-text-primary leading-tight"
+                    className="text-5xl md:text-7xl font-bold tracking-tight text-text-primary leading-tight font-display"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    Las Soluciones del Siglo XXI <br />
-                    <span className="text-text-secondary">no se construyen en silos.</span>
+                    Tecnología de Gran Calibre <br />
+                    <span className="text-text-secondary">al alcance de tu empresa.</span>
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto"
+                    className="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto font-sans"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                 >
-                    Ciberseguridad, IA e Infraestructura convergen aquí. <br />
-                    <span className="text-text-primary font-medium">21 solutions</span>, la nueva consultora fundada por tres expertos senior para definir el futuro tecnológico.
+                    Impulsamos la transición tecnológica de PYMES y medianas empresas. <br />
+                    <span className="text-text-primary font-medium">21 solutions</span>: Ciberseguridad, IA e Infraestructura integradas para escalar tu negocio.
                 </motion.p>
 
                 <motion.div
@@ -40,11 +40,11 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="flex flex-col items-center gap-4"
                 >
-                    <button className="px-8 py-4 text-lg font-bold text-background bg-gradient-to-r from-accent-cyber via-accent-ai to-accent-infra rounded-full hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.5)]">
-                        Conviértete en Socio Fundador
+                    <button className="px-8 py-4 text-lg font-bold text-background bg-gradient-to-r from-accent-cyber via-accent-ai to-accent-infra rounded-full hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(139,92,246,0.5)] font-sans">
+                        Inicia tu Transformación
                     </button>
-                    <p className="text-sm text-text-secondary/60 uppercase tracking-widest">
-                        Oportunidad exclusiva de patrocinio • Lanzamiento Q1 2026
+                    <p className="text-sm text-text-secondary/60 uppercase tracking-widest font-sans">
+                        Consultoría Estratégica • Implementación • Soporte
                     </p>
                 </motion.div>
             </div>
