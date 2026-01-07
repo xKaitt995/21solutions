@@ -1,0 +1,33 @@
+:root {
+  --background: #ffffff;
+  --foreground: #0047AB; /* Cobalt Blue - Strong and legible */
+  --primary-blue: #0047AB;
+  --secondary-blue: #002E6E;
+  --accent-blue: #4D7CC7;
+  --white: #ffffff;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-blue);
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
