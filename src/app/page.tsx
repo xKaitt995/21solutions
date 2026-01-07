@@ -2,8 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ValueProposition from "@/components/ValueProposition";
 import FoundersTeam from "@/components/FoundersTeam";
-import ServicePackages from "@/components/ServicePackages";
-import RoadmapWidget from "@/components/RoadmapWidget";
+import StrategicMethodology from "@/components/StrategicMethodology";
 import ContactFooter from "@/components/ContactFooter";
 
 export default function Home() {
@@ -12,9 +11,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ValueProposition />
+      <StrategicMethodology />
       <FoundersTeam />
-      <ServicePackages />
-      <RoadmapWidget />
       <ContactFooter />
     </main>
   );

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { cn } from "@/utils/cn"; // We need to create this utility or use clsx directly
+import { cn } from "@/utils/cn";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -27,19 +27,20 @@ export default function Navbar() {
         >
             <div className="flex items-center">
                 <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-cyber via-brand-core to-accent-infra">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-cyber via-brand-core to-accent-infra font-display">
                         21
                     </span>
-                    <span className="text-text-primary ml-1">solutions</span>
+                    <span className="text-text-primary ml-1 font-display">solutions</span>
                 </Link>
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-                {["La Sinergia", "El Equipo", "Alianzas", "Visión"].map((item) => (
+                {/* Updated Links to match new sections */}
+                {["La Sinergia", "Metodologia", "El Equipo"].map((item) => (
                     <Link
                         key={item}
                         href={`#${item.toLowerCase().replace(" ", "-")}`}
-                        className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
+                        className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors font-sans"
                     >
                         {item}
                     </Link>
@@ -47,7 +48,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center">
-                <button className="hidden md:block px-5 py-2 text-sm font-semibold text-background bg-text-primary rounded-full hover:bg-gray-200 transition-colors">
+                <button className="hidden md:block px-5 py-2 text-sm font-semibold text-background bg-text-primary rounded-full hover:bg-gray-200 transition-colors font-sans">
                     Ser Socio Fundador
                 </button>
             </div>
