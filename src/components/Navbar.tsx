@@ -48,9 +48,9 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center">
-                <button className="hidden md:block px-5 py-2 text-sm font-semibold text-white bg-text-primary rounded-full hover:bg-gray-800 transition-colors font-sans">
-                    Ser Socio Fundador
-                </button>
+                <Link href="#contactenos" className="hidden md:block px-5 py-2 text-sm font-semibold text-white bg-text-primary rounded-full hover:bg-gray-800 transition-colors font-sans">
+                    Contáctenos
+                </Link>
             </div>
         </motion.nav>
     );
